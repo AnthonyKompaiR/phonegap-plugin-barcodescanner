@@ -62,8 +62,9 @@ function findCamera() {
             throw new Error("No cameras found");
         }
 
+        console.log(camera[1].id);
         var backCameras = cameras.filter(function (camera) {
-            return camera.enclosureLocation && camera.enclosureLocation.panel === Devices.Panel.back;
+            return camera.name.includes("USB");
         });
 
         // If there is back cameras, return the id of the first,

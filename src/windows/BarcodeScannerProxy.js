@@ -62,7 +62,7 @@ function findCamera() {
             throw new Error("No cameras found");
         }
 
-        console.log(camera[1].id);
+        //console.log(camera[1].id);
         var backCameras = cameras.filter(function (camera) {
             return camera.name.includes("USB");
         });

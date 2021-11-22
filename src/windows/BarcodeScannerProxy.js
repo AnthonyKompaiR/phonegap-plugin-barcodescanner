@@ -92,7 +92,7 @@ function videoPreviewRotationLookup(displayOrientation, isMirrored) {
             }
             break;
         case Windows.Graphics.Display.DisplayOrientations.landscapeFlipped:
-            degreesToRotate = 180;
+            degreesToRotate = 0;
             break;
         case Windows.Graphics.Display.DisplayOrientations.portraitFlipped:
             if (isMirrored) {
